@@ -1,0 +1,13 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+
+access_park_trans_manager,park.trans.manager,model_park_trans,base.group_parking_manager,1,1,1,1
+access_park_trans_officer,park.trans.officer,model_park_trans,base.group_parking_officer,1,1,1,0
+access_park_trans_operator,park.trans.operator,model_park_trans,base.group_parking_operator,1,1,1,0
+
+access_park_trans_image_manager,park.trans.image.manager,model_park_trans_image,base.group_parking_manager,1,1,1,1
+access_park_trans_image_officer,park.trans.image.officer,model_park_trans_image,base.group_parking_officer,1,1,1,0
+access_park_trans_image_operator,park.trans.image.operator,model_park_trans_image,base.group_parking_operator,1,1,1,0
+
+access_park_trans_voucher_manager,park.trans.voucher.manager,model_park_trans_voucher,base.group_parking_manager,1,1,1,1
+access_park_trans_voucher_officer,park.trans.voucher.officer,model_park_trans_voucher,base.group_parking_officer,1,1,1,0
+access_park_trans_voucher_operator,park.trans.voucher.operator,model_park_trans_voucher,base.group_parking_operator,1,1,1,0

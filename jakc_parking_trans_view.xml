@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<openerp>
+    <data>
+        <!-- RDM/CUSTOMER TYPE -->
+		
+        <record model="ir.ui.view" id="view_park_trans_form">
+            <field name="name">park.trans.form</field>
+            <field name="model">park.trans</field>						
+            <field name="type">form</field>						
+            <field name="arch" type="xml">
+                <form string="Parking Transaction" version="7.0">
+                	<sheet>
+	                    <group>                            
+	                        <field name="trans_id"/>
+	                        <field name="trans_type_id"/>	                        
+	                        <field name="vehicle_type_id"/>	                        
+	                        <field name="state"/>	                        	                        	                        	                                                                        
+	                    </group>
+	                    <group>
+	                    	<group colspan="2">
+		                    	<field name="date_time_in"/>
+		                        <field name="booth_in_id"/>
+		                        <field name="operator_in_id"/>
+		                        <field name="shift_in_id"/>
+	                    	</group>
+	                    	<group colspan="2">
+		                   		<field name="date_time_out"/>
+								<field name="booth_out_id"/>
+		                        <field name="operator_out_id"/>
+		                        <field name="shift_out_id"/>		                    	
+	                    	</group>	                    	
+	                    </group>
+	                    <group>
+    						<field name="hours"/>
+	                        <field name="minutes"/>
+	                        <field name="seconds"/>
+	                        <field name="pricing_id"/>
+	                        <field name="parking_charge"/>
+	                        <field name="service_charge"/>
+	                        <field name="missing_charge"/>
+	                        <field name="pinalty_charge"/>
+	                        <field name="voucher_charge"/>	                        	                    	                   
+	                    </group>	                		
+	                    <notebook>
+	                    	<page string="Images">
+	                    	</page>
+	                    	<page string="Voucher">
+	                    	</page>
+	                    </notebook>                	
+                	</sheet>  
+                </form>
+            </field>
+        </record>
+		
+        <record model="ir.ui.view" id="view_park_trans_tree">
+            <field name="name">rdm.park.trans.tree</field>
+            <field name="model">park.trans</field>			
+            <field name="type">tree</field>						
+            <field name="arch" type="xml">
+                <tree string="Transaction">
+                    <field name="trans_id"/>		
+                </tree>
+            </field>
+        </record>
+
+                                                
+        <!-- PARKING/ACTION -->
+        <!-- TRANSACTION -->
+		<record model="ir.actions.act_window" id="action_park_trans">
+            <field name="name">Transaction</field>
+            <field name="res_model">park.trans</field>
+            <field name="view_mode">tree,form</field>
+        </record>		
+                                                                                                                                                                                                                                                                                        	
+    </data>                
+</openerp>

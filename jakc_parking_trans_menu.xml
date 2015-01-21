@@ -1,0 +1,7 @@
+<openerp>
+    <data>
+        <!-- PARKING/MENU -->
+        <!-- TRANSACTION --> 		       
+        <menuitem id="park_transaction_menu" name="Transaction" parent="base.park_transaction_menu"  action="action_park_trans" groups="base.group_parking_manager" sequence="1"/>
+    </data>
+</openerp>
